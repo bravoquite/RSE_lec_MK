@@ -1,1 +1,1 @@
-# RSE_lab_MK
+# RSE_lec_MK
