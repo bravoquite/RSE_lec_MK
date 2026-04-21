@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "volume"
+version = "0.1.0"
+license = { text = "GPL-3.0-or-later" }
+dependencies = ["pint"]
+
+[project.optional-dependencies]
+test = ["pytest"] 
+
+[tool.setuptools]
+py-modules = ["volume"]
