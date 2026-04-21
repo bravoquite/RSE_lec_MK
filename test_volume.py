@@ -13,11 +13,12 @@ def test_volume_converts_units_properly():
     result = volume(
         2 * _si.m,
         50 * _si.cm,
-        1000 * _si.mm,
+        2000 * _si.mm,
     )
 
     assert result.check("[length] ** 3")
-    assert result.to(_si.m**3).magnitude == pytest.approx(1.0)
+    assert result.units == _si.m**3
+    assert result.magnitude == pytest.approx(2.0)
 
 
 def test_volume_raises_error_for_negative_input():
